@@ -14,17 +14,22 @@ class Tweet:Identifiable {
     var nickname: String
 //    var icon: Data?
     var text: String
-//    var image: Data?
-    var like: Int
+    var image: Data?
+//    var like: Int
+    var type: Bool
     
+//    var timestamp: Date
     
 //    init(nickname: String, icon: Data, text: String, image: Data?, like: Int) {
-    init(id: UUID = UUID(), nickname: String, text: String,   like: Int) {
+    init(id: UUID = UUID(), nickname: String, text: String, image: Data?, type: Bool) {
         self.nickname = nickname
 //        self.icon = icon
         self.text = text
-//        self.image = image ?? Data()
-        self.like = like
+        self.image = image ?? Data()
+//        self.like = like
+        self.type = type
+        
+//        self.timestamp = timestamp
     }
 }
 

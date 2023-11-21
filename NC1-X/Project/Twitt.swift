@@ -20,7 +20,6 @@ struct Twitt: View {
     var body: some View {
         NavigationView {
             HStack{
-                //        Form{
                 ScrollView{
                     VStack{
                         HStack{
@@ -29,20 +28,14 @@ struct Twitt: View {
                                 .frame(width: 30, height: 30)
                                 .padding(.leading, 25)
                                 .padding(.trailing, 10)
-//                                .lineLimit(1)
                                 TextField("What's happening?", text: $text, axis: .vertical)
-                                //                                .multilineTextAlignment(.leading)
-                                //                                .lineLimit(1)
-                                //                                .textFieldStyle(.roundedBorder)
                                     .padding()
-                                //        }
-                                //                ForEach(tweets){tweet in
-                                //                    Text(tweet.nickname)
-                                //                }
                         }
                         .padding(.top, 10)
                     }
                     .keyboardAdaptive()
+                    
+                    
                 }
             }
 //            .offset(y: -UIScreen.screenHeight/1.22)
@@ -55,12 +48,9 @@ struct Twitt: View {
                 },
                 trailing: Button("Post") {
                     isPresented = false
-                    let newTweet = Tweet(nickname: "mario", text: text, like: 10)
+                    let newTweet = Tweet(nickname: "mario", text: text, image: nil, type: true)
                     context.insert(newTweet)
-                    //                addContact()
                 }
-                //                        .fontWeight(.bold)
-                //                        .font(.title)
                     .font(.system(size: 15))
                     .foregroundColor(.white)
                     .padding(.trailing, 16)
@@ -74,9 +64,6 @@ struct Twitt: View {
             
         }
         .preferredColorScheme(.dark)
-    }
-    func tweet(){
-        //        let
     }
 }
 
@@ -117,6 +104,6 @@ struct KeyboardAdaptiveModifier: ViewModifier {
     }
 }
 
-#Preview {
-    FirstScreen()
-}
+//#Preview {
+//    FirstScreen()
+//}
