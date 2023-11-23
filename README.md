@@ -30,6 +30,4 @@ This project is a replica of the current X app created entirely using SwiftUi an
 
 4. Explore the local Twitter environment, create tweets, add text, emojis, and photos, and experience the seamless deletion features.
 
-License:
-This project is licensed under the MIT License.
 
