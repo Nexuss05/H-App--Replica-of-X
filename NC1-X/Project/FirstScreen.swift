@@ -16,7 +16,7 @@ struct FirstScreen: View {
     @State private var isModalPresented = false
     @State var address = ""
     //    @Binding var isPresented: Bool
-//    var activity = TweetViewModel()
+    //    var activity = TweetViewModel()
     @State private var dragOffset: CGFloat = 0.0
     @State private var controlHeight: CGFloat = 0.0
     
@@ -64,53 +64,64 @@ struct FirstScreen: View {
                                     VStack(alignment: .leading) {
                                         ForEach(tweets.reversed()){tweet in
                                             if tweet.type == true{
-                                                NavigationLink(destination: TweetScreen(tweet: tweet, contr: true)){
-                                                    HStack{
-                                                        Image(systemName: "person.crop.circle")
-                                                            .resizable()
-                                                            .frame(width: 30, height: 30)
-                                                            .padding(.leading, 25)
-                                                            .padding(.trailing, 10)
-                                                            .padding(.bottom, 10)
-                                                        Text(tweet.text)
-                                                            .padding(.bottom, 10)
-//                                                        if ((tweet.image?.isEmpty) != nil){
-//                                                            let uiImage = UIImage(data: tweet.image ?? Data())
-//                                                            Image(uiImage:  uiImage ?? uiImage!)
-//                                                                .resizable()
-//                                                                .scaledToFit()
-//                                                        }
+                                                NavigationLink(destination: TweetScreen(tweet: tweet)){
+                                                    VStack(alignment: .leading) {
+                                                        VStack{
+                                                            HStack{
+                                                                Image(systemName: "person.crop.circle")
+                                                                    .resizable()
+                                                                    .frame(width: 30, height: 30)
+                                                                    .padding(.leading, 25)
+                                                                    .padding(.trailing, 10)
+                                                                    .padding(.bottom, 10)
+                                                                Text(tweet.text)
+                                                                    .padding(.bottom, 10)
+                                                                //
+                                                            }
+                                                            .padding(.top, 10)
+                                                        }
+//                                                        Spacer()
+                                                        if (tweet.image?.isEmpty == false) {
+                                                            VStack{
+                                                                let uiImage = UIImage(data: tweet.image ?? Data())
+                                                                Image(uiImage:  uiImage ?? uiImage!)
+                                                                    .resizable()
+                                                                    .scaledToFit()
+                                                                    .padding(.leading, 75)
+                                                                //                                                                Spacer()
+                                                            }
+                                                        }
+                                                        Divider()
                                                     }
-                                                    .padding(.top, 10)
                                                 }
                                                 .buttonStyle(PlainButtonStyle())
                                             }
                                         }
-                                        Divider()
+//                                        Divider()
                                         
                                         if !tweets.isEmpty, let firstTweet = tweets.first, firstTweet != nil {
-//                                            ForEach(activity.tweets){ twee in
-                                                
-//                                                if twee.type == true {
-//                                                    NavigationLink(destination: TweetScreen(tweet: tweets[0], tweet2: twee, contr: false)){
-//                                                        HStack{
-//                                                            Image(systemName: "person.crop.circle")
-//                                                                .resizable()
-//                                                                .frame(width: 30, height: 30)
-//                                                                .padding(.leading, 25)
-//                                                                .padding(.trailing, 10)
-//                                                                .padding(.bottom, 10)
-//                                                            Text(twee.text)
-//                                                                .padding(.bottom, 10)
-//                                                                .fixedSize(horizontal: false, vertical: true)
-//                                                        }
-//                                                        .padding(.top, 10)
-//                                                        Divider()
-//                                                        
-//                                                    }
-//                                                    .buttonStyle(PlainButtonStyle())
-//                                                }
-//                                            }
+                                            //                                            ForEach(activity.tweets){ twee in
+                                            
+                                            //                                                if twee.type == true {
+                                            //                                                    NavigationLink(destination: TweetScreen(tweet: tweets[0], tweet2: twee, contr: false)){
+                                            //                                                        HStack{
+                                            //                                                            Image(systemName: "person.crop.circle")
+                                            //                                                                .resizable()
+                                            //                                                                .frame(width: 30, height: 30)
+                                            //                                                                .padding(.leading, 25)
+                                            //                                                                .padding(.trailing, 10)
+                                            //                                                                .padding(.bottom, 10)
+                                            //                                                            Text(twee.text)
+                                            //                                                                .padding(.bottom, 10)
+                                            //                                                                .fixedSize(horizontal: false, vertical: true)
+                                            //                                                        }
+                                            //                                                        .padding(.top, 10)
+                                            //                                                        Divider()
+                                            //
+                                            //                                                    }
+                                            //                                                    .buttonStyle(PlainButtonStyle())
+                                            //                                                }
+                                            //                                            }
                                         }else{
                                             VStack{
                                                 EmptyView()
@@ -125,10 +136,11 @@ struct FirstScreen: View {
                                         }
                                     }
                                     
-                                }else{
+                                }
+                                else{
                                     ForEach(tweets.reversed()){tweet in
                                         if tweet.type == false{
-                                            NavigationLink(destination: TweetScreen(tweet: tweet, contr: true)){
+                                            NavigationLink(destination: TweetScreen(tweet: tweet)){
                                                 HStack{
                                                     Image(systemName: "person.crop.circle")
                                                         .resizable()
@@ -142,9 +154,9 @@ struct FirstScreen: View {
                                                 .padding(.top, 10)
                                             }
                                             .buttonStyle(PlainButtonStyle())
+                                            Divider()
                                         }
                                     }
-                                    Divider()
                                 }
                             }.frame(maxWidth: .infinity, alignment: .leading)
                             Spacer()
@@ -182,7 +194,7 @@ struct FirstScreen: View {
                                 .padding(.bottom, 10)
                             //  .zIndex(2)
                                 .sheet(isPresented: $isModalPresented, content: {
-//                                    Twitt(isPresented: $isModalPresented)
+                                    //                                    Twitt(isPresented: $isModalPresented)
                                     SecondTwitt(isPresented: $isModalPresented)
                                 })
                         }
@@ -205,17 +217,17 @@ struct FirstScreen: View {
                     }
                     ToolbarItem(placement: .principal) {
                         HStack {
-                            Image("logo-x-twitter")
+                            Image("logo-h")
                                 .resizable()
-                                .frame(width: 25, height: 25, alignment: .topLeading)
-                            
+                                .frame(width: 30, height: 30, alignment: .topLeading)
+                                .accessibilityHidden(true)
                         }
                     }
                     ToolbarItem(placement: .topBarTrailing) {
                         HStack {
                             
                             Button(action: {
-                                print("Info button tapped!")
+                                print("Settings button tapped!")
                             }) {
                                 Image(systemName: "gearshape")
                                     .foregroundStyle(.white)

@@ -10,12 +10,12 @@
 		C258B2702B04BEC8009CC6C8 /* FirstScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258B26F2B04BEC8009CC6C8 /* FirstScreen.swift */; };
 		C258B28F2B065BF3009CC6C8 /* Twitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C258B28E2B065BF3009CC6C8 /* Twitt.swift */; };
 		C2A69E392B0380FA0018E661 /* NC1_XApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A69E382B0380FA0018E661 /* NC1_XApp.swift */; };
-		C2A69E3B2B0380FA0018E661 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A69E3A2B0380FA0018E661 /* ContentView.swift */; };
 		C2A69E3D2B0380FA0018E661 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2A69E3C2B0380FA0018E661 /* Item.swift */; };
 		C2A69E3F2B0380FB0018E661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A69E3E2B0380FB0018E661 /* Assets.xcassets */; };
 		C2A69E422B0380FB0018E661 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2A69E412B0380FB0018E661 /* Preview Assets.xcassets */; };
 		C2AF494F2B0D2B8C00D3BBA4 /* SecondTwitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF494E2B0D2B8C00D3BBA4 /* SecondTwitt.swift */; };
 		C2AF49512B0D2CC300D3BBA4 /* bktwitt.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AF49502B0D2CC300D3BBA4 /* bktwitt.swift */; };
+		C2AF49592B0E482500D3BBA4 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C2AF49582B0E482500D3BBA4 /* Launch Screen.storyboard */; };
 		C2C6408D2B038DD30025D8E3 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2C6408C2B038DD30025D8E3 /* Data.swift */; };
 		C2D0EC942B079E5F00E116D3 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0EC932B079E5F00E116D3 /* Utils.swift */; };
 		C2D0EC962B07ADA100E116D3 /* TweetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2D0EC952B07ADA100E116D3 /* TweetViewModel.swift */; };
@@ -25,14 +25,14 @@
 /* Begin PBXFileReference section */
 		C258B26F2B04BEC8009CC6C8 /* FirstScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstScreen.swift; sourceTree = "<group>"; };
 		C258B28E2B065BF3009CC6C8 /* Twitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Twitt.swift; sourceTree = "<group>"; };
-		C2A69E352B0380FA0018E661 /* NC1-X.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NC1-X.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C2A69E352B0380FA0018E661 /* H.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = H.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2A69E382B0380FA0018E661 /* NC1_XApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NC1_XApp.swift; sourceTree = "<group>"; };
-		C2A69E3A2B0380FA0018E661 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2A69E3C2B0380FA0018E661 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		C2A69E3E2B0380FB0018E661 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2A69E412B0380FB0018E661 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C2AF494E2B0D2B8C00D3BBA4 /* SecondTwitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondTwitt.swift; sourceTree = "<group>"; };
 		C2AF49502B0D2CC300D3BBA4 /* bktwitt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bktwitt.swift; sourceTree = "<group>"; };
+		C2AF49582B0E482500D3BBA4 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		C2C6408C2B038DD30025D8E3 /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		C2D0EC932B079E5F00E116D3 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		C2D0EC952B07ADA100E116D3 /* TweetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetViewModel.swift; sourceTree = "<group>"; };
@@ -61,7 +61,7 @@
 		C2A69E362B0380FA0018E661 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C2A69E352B0380FA0018E661 /* NC1-X.app */,
+				C2A69E352B0380FA0018E661 /* H.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -70,7 +70,6 @@
 			isa = PBXGroup;
 			children = (
 				C2A69E382B0380FA0018E661 /* NC1_XApp.swift */,
-				C2A69E3A2B0380FA0018E661 /* ContentView.swift */,
 				C2D0EC932B079E5F00E116D3 /* Utils.swift */,
 				C2C6408B2B0384140025D8E3 /* Project */,
 				C2A69E3C2B0380FA0018E661 /* Item.swift */,
@@ -98,6 +97,7 @@
 				C258B28E2B065BF3009CC6C8 /* Twitt.swift */,
 				C2AF49502B0D2CC300D3BBA4 /* bktwitt.swift */,
 				C2AF494E2B0D2B8C00D3BBA4 /* SecondTwitt.swift */,
+				C2AF49582B0E482500D3BBA4 /* Launch Screen.storyboard */,
 			);
 			path = Project;
 			sourceTree = "<group>";
@@ -105,9 +105,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C2A69E342B0380FA0018E661 /* NC1-X */ = {
+		C2A69E342B0380FA0018E661 /* H */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C2A69E452B0380FB0018E661 /* Build configuration list for PBXNativeTarget "NC1-X" */;
+			buildConfigurationList = C2A69E452B0380FB0018E661 /* Build configuration list for PBXNativeTarget "H" */;
 			buildPhases = (
 				C2A69E312B0380FA0018E661 /* Sources */,
 				C2A69E322B0380FA0018E661 /* Frameworks */,
@@ -117,11 +117,11 @@
 			);
 			dependencies = (
 			);
-			name = "NC1-X";
+			name = H;
 			packageProductDependencies = (
 			);
 			productName = "NC1-X";
-			productReference = C2A69E352B0380FA0018E661 /* NC1-X.app */;
+			productReference = C2A69E352B0380FA0018E661 /* H.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -154,7 +154,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C2A69E342B0380FA0018E661 /* NC1-X */,
+				C2A69E342B0380FA0018E661 /* H */,
 			);
 		};
 /* End PBXProject section */
@@ -164,6 +164,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AF49592B0E482500D3BBA4 /* Launch Screen.storyboard in Resources */,
 				C2A69E422B0380FB0018E661 /* Preview Assets.xcassets in Resources */,
 				C2A69E3F2B0380FB0018E661 /* Assets.xcassets in Resources */,
 			);
@@ -176,7 +177,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2A69E3B2B0380FA0018E661 /* ContentView.swift in Sources */,
 				C2C6408D2B038DD30025D8E3 /* Data.swift in Sources */,
 				C2AF49512B0D2CC300D3BBA4 /* bktwitt.swift in Sources */,
 				C258B28F2B065BF3009CC6C8 /* Twitt.swift in Sources */,
@@ -245,6 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -302,6 +303,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -317,17 +319,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NC1-X/Preview Content\"";
 				DEVELOPMENT_TEAM = UU6556PJ33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -346,17 +351,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NC1-X/Preview Content\"";
 				DEVELOPMENT_TEAM = UU6556PJ33;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "H-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -382,7 +390,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C2A69E452B0380FB0018E661 /* Build configuration list for PBXNativeTarget "NC1-X" */ = {
+		C2A69E452B0380FB0018E661 /* Build configuration list for PBXNativeTarget "H" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C2A69E462B0380FB0018E661 /* Debug */,

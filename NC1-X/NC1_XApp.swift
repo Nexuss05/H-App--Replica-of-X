@@ -28,6 +28,7 @@ struct NC1_XApp: App {
 //            ContentView()
             FirstScreen()
                 .modelContainer(for: [Tweet.self])
+                .environment(\.accessibilityEnabled, true)
 //            Twitt()
 //                .modelContainer(for: [Tweet.self])
         }

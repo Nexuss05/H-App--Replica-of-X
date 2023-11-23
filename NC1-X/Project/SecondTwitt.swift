@@ -34,29 +34,42 @@ struct SecondTwitt: View {
                                 .padding()
                         }
                         .padding(.top, 10)
-                        VStack{
+                        VStack(alignment: .leading){
                             if let selectedPhotoData = image,
                                let uiImage = UIImage(data: selectedPhotoData) {
                                 Image(uiImage: uiImage)
                                     .resizable()
                                     .scaledToFill()
                                 //                                .frame(maxWidth: .infinity, maxHeight: 300)
-                            }
-                            
-                            PhotosPicker(selection: $selectedPhoto,
-                                         matching: .images,
-                                         photoLibrary: .shared()) {
-                                Label("Add Image", systemImage: "photo")
+                            }else{
+                                PhotosPicker(selection: $selectedPhoto,
+                                             matching: .images,
+                                             photoLibrary: .shared()) {
+                                    VStack{
+                                        Label("", systemImage: "photo")
+                                            .padding(.bottom, 5)
+                                            .padding(.leading, 10)
+                                            .foregroundStyle(.white)
+                                        Text("Add Image")
+                                            .foregroundStyle(.white)
+                                    }
                                     .padding(10)
+                                    .overlay(
+                                        RoundedRectangle(cornerRadius: 16)
+                                            .stroke(.black, lineWidth: 1)
+                                    )
+                                    Spacer()
+                                }
+                                             .padding(.leading, 10)
                             }
                         }
                         if image != nil {
                             
                             Button(role: .destructive) {
-                                withAnimation {
-                                    selectedPhoto = nil
-                                    image = nil
-                                }
+                                //                                withAnimation {
+                                selectedPhoto = nil
+                                image = nil
+                                //                                }
                             } label: {
                                 Label("Remove Image", systemImage: "xmark")
                                     .foregroundStyle(.red)
@@ -81,7 +94,7 @@ struct SecondTwitt: View {
                 },
                 trailing: Button("Post") {
                     isPresented = false
-                    let newTweet = Tweet(nickname: "mario", text: text, image: image, type: true)
+                    let newTweet = Tweet(nickname: "Matteo", text: text, image: image, type: true)
                     context.insert(newTweet)
                 }
                     .font(.system(size: 15))

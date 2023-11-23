@@ -48,7 +48,7 @@ struct Twitt: View {
                 },
                 trailing: Button("Post") {
                     isPresented = false
-                    let newTweet = Tweet(nickname: "mario", text: text, image: nil, type: true)
+                    let newTweet = Tweet(nickname: "Matteo", text: text, image: nil, type: true)
                     context.insert(newTweet)
                 }
                     .font(.system(size: 15))
